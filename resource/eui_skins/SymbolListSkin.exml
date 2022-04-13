@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="SymbolListSkin" width="165" height="1300" xmlns:e="http://ns.egret.com/eui"
+<e:Skin class="SymbolListSkin" width="165" height="780" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
     <w:Config id="1801cb2a345"></w:Config>
-    <ns1:Symbol id="symbol0" width="165" height="120" x="0" y="1170" />
-    <ns1:Symbol width="165" height="120" x="0" y="1040" id="symbol1" />
-    <ns1:Symbol width="165" height="120" x="0" y="910" id="symbol2" />
-    <ns1:Symbol width="165" height="120" x="0" y="780" id="symbol3" />
-    <ns1:Symbol width="165" height="120" x="0" y="650" id="symbol4" />
-    <ns1:Symbol width="165" height="120" x="0" y="520" id="symbol5" />
-    <ns1:Symbol width="165" height="150" x="0" y="390" id="symbol6" />
-    <ns1:Symbol width="165" height="120" x="0" y="260" id="symbol7" />
-    <ns1:Symbol width="165" height="120" x="0" y="130" id="symbol8" />
-    <ns1:Symbol width="165" height="120" x="0" y="0" id="symbol9" />
+    <ns1:Symbol id="symbol0" width="165" height="120" x="0" y="650" />
+    <ns1:Symbol width="165" height="120" x="0" y="520" id="symbol1" />
+    <ns1:Symbol width="165" height="120" x="0" y="390" id="symbol2" />
+    <ns1:Symbol width="165" height="120" x="0" y="260" id="symbol3" />
+    <ns1:Symbol width="165" height="120" x="0" y="130" id="symbol4" />
+    <ns1:Symbol width="165" height="120" x="0" y="0" id="symbol5" />
 </e:Skin>

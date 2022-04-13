@@ -7,14 +7,18 @@
                  horizontalCenter="0" locked="true" />
         <e:Rect id="symbolMask" width="495" height="265" x="235" y="100" anchorOffsetX="0" anchorOffsetY="0" scaleX="1"
                 scaleY="1" />
-        <e:Group id="symbolGroup" y="100" x="235">
-                <ns1:SymbolList id="symbolList0" width="165" height="1200" x="0" y="-970" scaleX="1" scaleY="1" />
-                <ns1:SymbolList id="symbolList1" width="165" height="1200" x="165" y="-970" scaleX="1" scaleY="1" />
-                <ns1:SymbolList width="165" height="1200" x="332.5" y="-970" scaleX="1" scaleY="1" id="symbolList2" />
+        <e:Group id="symbolGroup" y="100" x="235" locked="true">
+                <ns1:SymbolList id="symbolList0" width="165" height="780" x="0" y="-450" scaleX="1" scaleY="1" />
+                <ns1:SymbolList id="symbolList1" width="165" height="780" x="165" y="-450" scaleX="1" scaleY="1" />
+                <ns1:SymbolList width="165" height="780" x="332.5" y="-450" scaleX="1" scaleY="1" id="symbolList2" />
         </e:Group>
         <e:Image source="frame_png" width="595" height="310" horizontalCenter="0" bottom="80" locked="true" />
         <e:Image source="Pillar_json.001" x="388" y="83" anchorOffsetY="0" height="350" locked="true" />
         <e:Image source="Pillar_json.001" x="553" y="83" height="350" anchorOffsetY="0" locked="true" />
         <e:Image source="bar_png" scaleX="1" scaleY="1" horizontalCenter="0" bottom="30" width="745" height="91"
                  locked="true" />
+        <e:Image id="spinButton" source="spin_png" x="437" y="361" scaleX="0.7" scaleY="0.7" locked="true" />
+        <e:Image source="none_png" x="375" y="385" scaleX="0.5" scaleY="0.5" locked="true" />
+        <e:Image source="none_png" x="585" y="385" scaleX="-0.5" scaleY="0.5" locked="true" />
+        <e:TextInput id="cheatInput" width="960" height="20" left="0" bottom="0" />
 </e:Skin>

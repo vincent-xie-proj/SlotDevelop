@@ -14,6 +14,7 @@ var game_file_list = [
 	"bin-debug/AppFacade.js",
 	"bin-debug/AssetAdapter.js",
 	"bin-debug/controller/AppStartupCommand.js",
+	"bin-debug/controller/GameSpinCommand.js",
 	"bin-debug/controller/GameStartCommand.js",
 	"bin-debug/controller/InitControllerCommand.js",
 	"bin-debug/controller/InitModelCommand.js",

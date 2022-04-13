@@ -3,4 +3,6 @@ enum NotificationEvent {
     INIT_EVENT,
     LOADING_EVENT,
     GAME_START_EVENT,
+    GAME_SPIN_EVENT,
+    GAME_RESULT_EVENT,
 }

@@ -1,4 +1,5 @@
 class GameProxy extends puremvc.Proxy implements puremvc.IProxy {
+    private cheatResult: number[] = [];
     public constructor(proxyName?: string, data?: any) {
         super(proxyName, data);
         this.init();
@@ -12,6 +13,10 @@ class GameProxy extends puremvc.Proxy implements puremvc.IProxy {
     private loadData(): void {
         setTimeout(() => {
             this.sendNotification(NotificationEvent[NotificationEvent.GAME_START_EVENT])
-        }, 1000)
+        }, 500)
+    }
+
+    public setCheatResult(arr: number[]): void {
+        this.cheatResult = [...arr];
     }
 }
