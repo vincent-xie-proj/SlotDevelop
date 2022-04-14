@@ -1,1 +1,14 @@
-{"compilerOptions":{"target":"es5","locale":"zh-CN"},"exclude":["node_modules"]}
+{
+    "compilerOptions": {
+        "lib": [
+            "es6",
+            "dom",
+            "es2017"
+        ],
+        "target": "es5",
+        "locale": "zh-CN"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,3 +1,4 @@
+/**載入介面 */
 class LoadingScene extends eui.Component implements eui.UIComponent {
 	public constructor() {
 		super();

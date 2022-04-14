@@ -1,6 +1,10 @@
+/**轉輪符號列表 */
 class SymbolList extends eui.Component implements eui.UIComponent {
 	/**符號列表 */
 	private list: Symbol[] = [];
+
+	/**模糊效果 */
+	private blurFilter: egret.BlurFilter = new egret.BlurFilter(0, 0);
 
 	/**符號數量 */
 	private static COUNT: number = 10;
@@ -26,13 +30,8 @@ class SymbolList extends eui.Component implements eui.UIComponent {
 	/**轉動次數 */
 	private static RUN_TIMES: number = 5;
 
-	/**模糊效果 */
-	private blurFilter: egret.BlurFilter = new egret.BlurFilter(0, 0);
 	/**最大模糊量 */
 	private static MAX_BLUR: number = 15;
-
-	/**完成事件 */
-	public static FINISH_EVENT: string = "finishEvent";
 
 	public constructor() {
 		super();
@@ -146,7 +145,7 @@ class SymbolList extends eui.Component implements eui.UIComponent {
 		// 播放時間軸
 		const timeLine: TimelineLite = new TimelineLite({
 			delay: delay, onComplete: () => {
-				this.dispatchEvent(new egret.Event(SymbolList.FINISH_EVENT));
+				this.dispatchEvent(new egret.Event(ViewEvent[ViewEvent.FINISH_RUN_EVENT]));
 			}
 		});
 		timeLine.add(startTimeLine);

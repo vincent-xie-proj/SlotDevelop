@@ -14,6 +14,7 @@ var game_file_list = [
 	"bin-debug/AppFacade.js",
 	"bin-debug/AssetAdapter.js",
 	"bin-debug/controller/AppStartupCommand.js",
+	"bin-debug/controller/GameCheatCommand.js",
 	"bin-debug/controller/GameSpinCommand.js",
 	"bin-debug/controller/GameStartCommand.js",
 	"bin-debug/controller/InitControllerCommand.js",
@@ -25,14 +26,18 @@ var game_file_list = [
 	"bin-debug/core/ProxyEnum.js",
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
+	"bin-debug/model/dto/SpinResultDto.js",
 	"bin-debug/model/GameProxy.js",
 	"bin-debug/ThemeAdapter.js",
 	"bin-debug/view/component/GameScene.js",
 	"bin-debug/view/component/LoadingScene.js",
+	"bin-debug/view/component/MessageAlert.js",
+	"bin-debug/view/component/SpinButton.js",
 	"bin-debug/view/component/Symbol.js",
 	"bin-debug/view/component/SymbolList.js",
 	"bin-debug/view/GameMediator.js",
 	"bin-debug/view/LoadingMediator.js",
+	"bin-debug/view/MessageMediator.js",
 	//----auto game_file_list end----
 ];
 

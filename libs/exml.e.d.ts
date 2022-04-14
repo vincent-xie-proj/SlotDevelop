@@ -22,6 +22,8 @@ declare module skins{
 }
 declare class LoadingSceneSkin extends eui.Skin{
 }
+declare class MessageAlertSkin extends eui.Skin{
+}
 declare module skins{
 	class PanelSkin extends eui.Skin{
 	}
@@ -37,6 +39,8 @@ declare module skins{
 declare module skins{
 	class ScrollerSkin extends eui.Skin{
 	}
+}
+declare class SpinButtonSkin extends eui.Skin{
 }
 declare class SymbolListSkin extends eui.Skin{
 }

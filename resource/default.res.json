@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,slot_bg_png,frame_transparency_png,bar_png,Pillar_json,Symbol_json,frame_png,spin_png,none_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,slot_bg_png,frame_transparency_png,bar_png,Pillar_json,Symbol_json,frame_png,none_png,cost2_png,cost_png,SpinButton_json,loading_png,alert_png,back_png",
 			"name": "preload"
 		}
 	],
@@ -169,14 +169,40 @@
 			"url": "assets/Game/frame.png"
 		},
 		{
-			"name": "spin_png",
-			"type": "image",
-			"url": "assets/Game/spin.png"
-		},
-		{
 			"name": "none_png",
 			"type": "image",
 			"url": "assets/Game/none.png"
+		},
+		{
+			"name": "cost2_png",
+			"type": "image",
+			"url": "assets/Game/cost2.png"
+		},
+		{
+			"name": "cost_png",
+			"type": "image",
+			"url": "eui_skins/cost.png"
+		},
+		{
+			"name": "SpinButton_json",
+			"type": "sheet",
+			"url": "assets/Game/SpinButton.json",
+			"subkeys": "spin,spinOver,spinDown"
+		},
+		{
+			"name": "loading_png",
+			"type": "image",
+			"url": "assets/Game/loading.png"
+		},
+		{
+			"name": "alert_png",
+			"type": "image",
+			"url": "assets/Game/alert.png"
+		},
+		{
+			"name": "back_png",
+			"type": "image",
+			"url": "assets/Game/back.png"
 		}
 	]
 }

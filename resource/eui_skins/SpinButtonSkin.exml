@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SpinButtonSkin" width="125" height="125" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="18026c71adc"></w:Config>
+	<e:Image id="icon" width="125" height="125" horizontalCenter="0" verticalCenter="0" source="SpinButton_json.spin" />
+</e:Skin>

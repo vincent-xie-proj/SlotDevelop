@@ -1,6 +1,6 @@
-/**載入 Mediator */
-class LoadingMediator extends puremvc.Mediator {
-    private loadingScene: LoadingScene = new LoadingScene();
+/**訊息 Mediator */
+class MessageMediator extends puremvc.Mediator {
+    private messageAlert: MessageAlert = new MessageAlert();
     public constructor(mediatorName?: string, viewComponent?: Main) {
         super(mediatorName, viewComponent);
     }
@@ -12,23 +12,22 @@ class LoadingMediator extends puremvc.Mediator {
     public listNotificationInterests(): string[] {
         return [
             NotificationEvent[NotificationEvent.INIT_EVENT],
-            NotificationEvent[NotificationEvent.LOADING_EVENT],
+            NotificationEvent[NotificationEvent.MESSAGE_EVENT],
         ];
     }
 
     public handleNotification(notification: puremvc.INotification): void {
         const name: string = notification.getName();
-        const body: any = notification.getBody()
         switch (name) {
             case NotificationEvent[NotificationEvent.INIT_EVENT]:
                 {
-                    this.getViewComponent().addChild(this.loadingScene)
+                    this.getViewComponent().addChild(this.messageAlert);
                 }
                 break;
-            case NotificationEvent[NotificationEvent.LOADING_EVENT]:
+            case NotificationEvent[NotificationEvent.MESSAGE_EVENT]:
                 {
-                    const isShow = body as boolean;
-                    this.loadingScene.visible = isShow;
+                    const message: string = notification.getBody() as string;
+                    this.messageAlert.showMessage(message)
                 }
                 break;
         }

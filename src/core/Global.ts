@@ -1,4 +1,6 @@
+/**共用函數方法 */
 class Global {
+    /**隨機排序 */
     public static random(list: Array<any>, isClone: boolean = true): Array<any> {
         const arr = isClone ? [...list] : list;
         const length: number = list.length;

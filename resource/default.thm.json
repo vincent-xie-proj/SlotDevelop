@@ -17,7 +17,9 @@
     "LoadingScene": "resource/eui_skins/LoadingSceneSkin.exml",
     "Symbols": "resource/eui_skins/SymbolsSkin.exml",
     "SymbolList": "resource/eui_skins/SymbolListSkin.exml",
-    "Symbol": "resource/eui_skins/SymbolSkin.exml"
+    "Symbol": "resource/eui_skins/SymbolSkin.exml",
+    "SpinButton": "resource/eui_skins/SpinButtonSkin.exml",
+    "MessageAlert": "resource/eui_skins/MessageAlertSkin.exml"
   },
   "autoGenerateExmlsList": true,
   "exmls": [
@@ -28,10 +30,12 @@
     "resource/eui_skins/HSliderSkin.exml",
     "resource/eui_skins/ItemRendererSkin.exml",
     "resource/eui_skins/LoadingSceneSkin.exml",
+    "resource/eui_skins/MessageAlertSkin.exml",
     "resource/eui_skins/PanelSkin.exml",
     "resource/eui_skins/ProgressBarSkin.exml",
     "resource/eui_skins/RadioButtonSkin.exml",
     "resource/eui_skins/ScrollerSkin.exml",
+    "resource/eui_skins/SpinButtonSkin.exml",
     "resource/eui_skins/SymbolListSkin.exml",
     "resource/eui_skins/SymbolSkin.exml",
     "resource/eui_skins/TextInputSkin.exml",

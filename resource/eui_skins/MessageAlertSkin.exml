@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MessageAlertSkin" width="960" height="480" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="180274a9efe"></w:Config>
+	<e:Rect strokeAlpha="0" fillAlpha="0.75" left="0" top="0" bottom="0" right="0" locked="true" />
+	<e:Group x="220" y="96">
+		<e:Image source="alert_png" height="289" width="459" x="0" y="0" locked="true" />
+		<e:Label id="messageText" text="這是訊息" x="96" y="48.5" anchorOffsetX="0" width="327" anchorOffsetY="0" height="213"
+		         verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei" locked="true" />
+		<e:Image id="closeButton" source="back_png" x="405" y="239" scaleX="0.5" scaleY="0.5" locked="true" />
+	</e:Group>
+</e:Skin>
