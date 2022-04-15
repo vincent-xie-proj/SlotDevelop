@@ -26,9 +26,28 @@ class GameProxy extends puremvc.Proxy implements puremvc.IProxy {
 
     /**載入資料 */
     private loadData(): void {
-        setTimeout(() => {
-            this.sendNotification(NotificationEvent[NotificationEvent.GAME_START_EVENT])
-        }, 500)
+        let duration: number = 0;
+        let percent: number = 0;
+        const loadHandler: Function = () => {
+            duration += Math.random() * 0.5 + 0.5;
+            percent += Math.random() * 0.5 + 0.1;
+            if (percent < 1) {
+                setTimeout((loadingPercent) => {
+                    this.sendNotification(NotificationEvent[NotificationEvent.LOADING_EVENT], [true, loadingPercent]);
+                }, duration * 1000, percent);
+
+                loadHandler();
+            } else {
+                setTimeout(() => {
+                    this.sendNotification(NotificationEvent[NotificationEvent.LOADING_EVENT], [true, 1]);
+                }, duration * 1000);
+
+                setTimeout(() => {
+                    this.sendNotification(NotificationEvent[NotificationEvent.GAME_START_EVENT]);
+                }, duration * 1000 + 500);
+            }
+        }
+        loadHandler();
     }
 
     /**下注 */
@@ -55,6 +74,22 @@ class GameProxy extends puremvc.Proxy implements puremvc.IProxy {
                 case 30:
                     {
                         message = "不充值也不用密技?! 建議直接關遊戲視窗吧!";
+                    }
+                    break;
+                case 50:
+                    {
+                        message = "您也太有耐心了吧?! 建議把耐心用在其他地方唷!! 快去充值!!";
+                    }
+                    break;
+                case 70:
+                    {
+                        message = "別玩訊息窗了!! 您不睏嗎?! 貓頭鷹都想飛回去睡覺了!! 快點充值吧!!";
+                    }
+                    break;
+                case 100:
+                    {
+                        message = "怕您了!! 直接送您10萬點數吧!! 遊戲愉快!!";
+                        this.sendNotification(NotificationEvent[NotificationEvent.GAME_CHEAT_EVENT], [0, 100000]);
                         this.countOfSpinFail = 0;
                     }
                     break;
@@ -63,6 +98,7 @@ class GameProxy extends puremvc.Proxy implements puremvc.IProxy {
             return new SpinResultDto(message, false);
         }
 
+        this.countOfSpinFail = 0;
         const beforeBetOfCredit: number = this.credit;
         this.credit -= GameProxy.BET;
         const afterBetOfCredit: number = this.credit;
@@ -88,7 +124,7 @@ class GameProxy extends puremvc.Proxy implements puremvc.IProxy {
         }
 
         const winLose: number = this.credit - beforeBetOfCredit;
-        return new SpinResultDto("", true, symbolList, GameProxy.BET, this.credit, bonus, beforeBetOfCredit, afterBetOfCredit, winLose);
+        return new SpinResultDto("", true, isWin, symbolList, GameProxy.BET, this.credit, bonus, beforeBetOfCredit, afterBetOfCredit, winLose);
     }
 
     /**取得轉輪列表 */

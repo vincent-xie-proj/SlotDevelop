@@ -32,4 +32,6 @@
                  locked="true" />
         <ns1:SpinButton id="spinButton" width="125" height="125" y="365" scaleX="0.65" scaleY="0.65"
                         horizontalCenter="0.5" locked="true" />
+        <e:Image id="bigWin" source="bigwin_png" scaleX="0.5" scaleY="0.5" horizontalCenter="0" verticalCenter="0"
+                 locked="true" visible="false" />
 </e:Skin>

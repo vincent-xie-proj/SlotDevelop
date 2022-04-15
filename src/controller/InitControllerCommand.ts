@@ -6,6 +6,5 @@ class InitControllerCommand extends puremvc.SimpleCommand {
         this.facade.registerCommand(NotificationEvent[NotificationEvent.GAME_CHEAT_EVENT], GameCheatCommand)
 
         this.sendNotification(NotificationEvent[NotificationEvent.INIT_EVENT])
-        this.sendNotification(NotificationEvent[NotificationEvent.LOADING_EVENT], true)
     }
 }

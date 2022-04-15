@@ -33,7 +33,7 @@ var game_file_list = [
 	"bin-debug/view/component/LoadingScene.js",
 	"bin-debug/view/component/MessageAlert.js",
 	"bin-debug/view/component/SpinButton.js",
-	"bin-debug/view/component/Symbol.js",
+	"bin-debug/view/component/SymbolIcon.js",
 	"bin-debug/view/component/SymbolList.js",
 	"bin-debug/view/GameMediator.js",
 	"bin-debug/view/LoadingMediator.js",

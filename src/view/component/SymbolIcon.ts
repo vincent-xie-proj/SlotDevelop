@@ -1,5 +1,5 @@
 /**轉輪符號 */
-class Symbol extends eui.Component implements eui.UIComponent {
+class SymbolIcon extends eui.Component implements eui.UIComponent {
 	/**icon */
 	private icon: eui.Image;
 
@@ -7,7 +7,6 @@ class Symbol extends eui.Component implements eui.UIComponent {
 	private currentFrame: number
 	public constructor() {
 		super();
-
 	}
 
 	/**顯示影格 */

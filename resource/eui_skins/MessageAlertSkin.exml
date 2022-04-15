@@ -3,7 +3,7 @@
         xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="180274a9efe"></w:Config>
 	<e:Rect strokeAlpha="0" fillAlpha="0.75" left="0" top="0" bottom="0" right="0" locked="true" />
-	<e:Group x="220" y="96">
+	<e:Group id="uiGroup" x="220" y="96" locked="true">
 		<e:Image source="alert_png" height="289" width="459" x="0" y="0" locked="true" />
 		<e:Label id="messageText" text="這是訊息" x="96" y="48.5" anchorOffsetX="0" width="327" anchorOffsetY="0" height="213"
 		         verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei" locked="true" />

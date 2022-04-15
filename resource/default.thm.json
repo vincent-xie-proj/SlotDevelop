@@ -19,7 +19,8 @@
     "SymbolList": "resource/eui_skins/SymbolListSkin.exml",
     "Symbol": "resource/eui_skins/SymbolSkin.exml",
     "SpinButton": "resource/eui_skins/SpinButtonSkin.exml",
-    "MessageAlert": "resource/eui_skins/MessageAlertSkin.exml"
+    "MessageAlert": "resource/eui_skins/MessageAlertSkin.exml",
+    "SymbolIcon": "resource/eui_skins/SymbolIconSkin.exml"
   },
   "autoGenerateExmlsList": true,
   "exmls": [
@@ -36,8 +37,8 @@
     "resource/eui_skins/RadioButtonSkin.exml",
     "resource/eui_skins/ScrollerSkin.exml",
     "resource/eui_skins/SpinButtonSkin.exml",
+    "resource/eui_skins/SymbolIconSkin.exml",
     "resource/eui_skins/SymbolListSkin.exml",
-    "resource/eui_skins/SymbolSkin.exml",
     "resource/eui_skins/TextInputSkin.exml",
     "resource/eui_skins/ToggleSwitchSkin.exml",
     "resource/eui_skins/VScrollBarSkin.exml",

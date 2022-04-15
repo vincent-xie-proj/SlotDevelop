@@ -42,9 +42,9 @@ declare module skins{
 }
 declare class SpinButtonSkin extends eui.Skin{
 }
-declare class SymbolListSkin extends eui.Skin{
+declare class SymbolIconSkin extends eui.Skin{
 }
-declare class SymbolSkin extends eui.Skin{
+declare class SymbolListSkin extends eui.Skin{
 }
 declare module skins{
 	class TextInputSkin extends eui.Skin{

@@ -3,6 +3,9 @@ class SpinResultDto {
     /**是否下注成功 */
     public isSpinSuccess: boolean;
 
+    /**是否中獎 */
+    public isWin: boolean;
+
     /**轉輪列表 */
     public symbollist: number[];
 
@@ -27,9 +30,10 @@ class SpinResultDto {
     /**訊息 */
     public message: string;
 
-    public constructor(message: string = "", isSpinSuccess: boolean = false, symbollist: number[] = [], bet: number = 0, credit: number = 0, bouns: number = 0, beforeBetOfCredit: number = 0, afterBetOfCredit: number = 0, winLose: number = 0) {
+    public constructor(message: string = "", isSpinSuccess: boolean = false, isWin: boolean = false, symbollist: number[] = [], bet: number = 0, credit: number = 0, bouns: number = 0, beforeBetOfCredit: number = 0, afterBetOfCredit: number = 0, winLose: number = 0) {
         this.message = message;
         this.isSpinSuccess = isSpinSuccess;
+        this.isWin = isWin;
         this.symbollist = symbollist;
         this.bet = bet;
         this.credit = credit;

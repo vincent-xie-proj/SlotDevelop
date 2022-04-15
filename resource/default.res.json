@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,slot_bg_png,frame_transparency_png,bar_png,Pillar_json,Symbol_json,frame_png,none_png,cost2_png,cost_png,SpinButton_json,loading_png,alert_png,back_png",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,slot_bg_png,frame_transparency_png,bar_png,Pillar_json,frame_png,none_png,cost2_png,SpinButton_json,loading_png,alert_png,back_png,bigwin_png,Symbol_json,cost_png,lineFrame_png,line_png,loadingSlide_png,loadinBar_png,loadingFrame_png",
 			"name": "preload"
 		}
 	],
@@ -158,12 +158,6 @@
 			"url": "assets/Game/Pillar.json"
 		},
 		{
-			"name": "Symbol_json",
-			"subkeys": "Symbol0,Symbol1,Symbol2,Symbol3,Symbol4,Symbol5,Symbol6,Symbol7,Symbol8,Symbol9",
-			"type": "sheet",
-			"url": "assets/Game/Symbol.json"
-		},
-		{
 			"name": "frame_png",
 			"type": "image",
 			"url": "assets/Game/frame.png"
@@ -177,11 +171,6 @@
 			"name": "cost2_png",
 			"type": "image",
 			"url": "assets/Game/cost2.png"
-		},
-		{
-			"name": "cost_png",
-			"type": "image",
-			"url": "eui_skins/cost.png"
 		},
 		{
 			"name": "SpinButton_json",
@@ -203,6 +192,47 @@
 			"name": "back_png",
 			"type": "image",
 			"url": "assets/Game/back.png"
+		},
+		{
+			"name": "bigwin_png",
+			"type": "image",
+			"url": "assets/Game/bigwin.png"
+		},
+		{
+			"name": "Symbol_json",
+			"type": "sheet",
+			"url": "assets/Game/Symbol.json",
+			"subkeys": "Symbol0,Symbol1,Symbol2,Symbol3,Symbol4,Symbol5,Symbol6,Symbol7,Symbol8,Symbol9"
+		},
+		{
+			"name": "cost_png",
+			"type": "image",
+			"url": "assets/Game/cost.png"
+		},
+		{
+			"name": "lineFrame_png",
+			"type": "image",
+			"url": "assets/Game/lineFrame.png"
+		},
+		{
+			"name": "line_png",
+			"type": "image",
+			"url": "assets/Game/line.png"
+		},
+		{
+			"name": "loadingSlide_png",
+			"type": "image",
+			"url": "assets/Game/loadingSlide.png"
+		},
+		{
+			"name": "loadinBar_png",
+			"type": "image",
+			"url": "assets/Game/loadinBar.png"
+		},
+		{
+			"name": "loadingFrame_png",
+			"type": "image",
+			"url": "assets/Game/loadingFrame.png"
 		}
 	]
 }

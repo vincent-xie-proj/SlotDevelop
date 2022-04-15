@@ -22,12 +22,13 @@ class LoadingMediator extends puremvc.Mediator {
         switch (name) {
             case NotificationEvent[NotificationEvent.INIT_EVENT]:
                 {
-                    this.getViewComponent().addChild(this.loadingScene)
+                    this.getViewComponent().addChild(this.loadingScene);
                 }
                 break;
             case NotificationEvent[NotificationEvent.LOADING_EVENT]:
                 {
-                    const isShow = body as boolean;
+                    const [isShow, percent] = body as any[];
+                    isShow ? this.loadingScene.startLoading(percent) : this.loadingScene.finishLoading();
                     this.loadingScene.visible = isShow;
                 }
                 break;

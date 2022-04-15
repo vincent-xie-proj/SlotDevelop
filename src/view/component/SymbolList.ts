@@ -1,7 +1,7 @@
 /**轉輪符號列表 */
 class SymbolList extends eui.Component implements eui.UIComponent {
 	/**符號列表 */
-	private list: Symbol[] = [];
+	private list: SymbolIcon[] = [];
 
 	/**模糊效果 */
 	private blurFilter: egret.BlurFilter = new egret.BlurFilter(0, 0);

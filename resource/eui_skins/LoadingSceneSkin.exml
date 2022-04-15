@@ -2,5 +2,11 @@
 <e:Skin class="LoadingSceneSkin" width="960" height="480" xmlns:e="http://ns.egret.com/eui"
         xmlns:w="http://ns.egret.com/wing">
 	<w:Config id="1801b6a087e"></w:Config>
-	<e:Image source="loading_png" left="0" top="0" />
+	<e:Image source="loading_png" left="0" top="0" locked="true" />
+	<e:Image id="loadingFrame" source="loadingFrame_png" horizontalCenter="0" bottom="50" locked="true" />
+	<e:Image id="loadingBar" source="loadinBar_png" horizontalCenter="0" bottom="50" locked="true" />
+	<e:Rect id="loadingMask" width="455" height="34" x="253" y="396" fillAlpha="0.5" locked="true" />
+	<e:Label id="loadingPercent" text="100 %" textColor="0xE0932A" size="18" fontFamily="Georgia" textAlign="center"
+	         anchorOffsetX="0" width="80" anchorOffsetY="0" height="24" verticalAlign="middle" bold="true"
+	         horizontalCenter="0" bottom="15" />
 </e:Skin>

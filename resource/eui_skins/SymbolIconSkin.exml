@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SymbolIconSkin" width="165" height="120" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1802b2d9f8f"></w:Config>
+	<e:Image id="icon" horizontalCenter="0" verticalCenter="0" scaleX="0.32" scaleY="0.32" source="Symbol_json.Symbol0" />
+</e:Skin>

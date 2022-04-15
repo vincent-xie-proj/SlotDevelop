@@ -70,7 +70,7 @@ class GameMediator extends puremvc.Mediator {
 
     /**顯示下注結果 */
     private showResult(): void {
-        this.gameScene.showResult(this.resultTemp.winLose);
+        this.gameScene.showResult(this.resultTemp.isWin, this.resultTemp.winLose);
         this.gameScene.updateCredit(this.resultTemp.credit);
         this.resultTemp = null;
     }

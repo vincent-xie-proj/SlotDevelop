@@ -27,11 +27,17 @@ class GameScene extends eui.Component implements eui.UIComponent {
 	/**錯誤訊息 */
 	private errorMsg: eui.Label;
 
+	/**中獎畫面 */
+	private bigWin: eui.Image;
+
 	/**轉動間隔 */
 	private static RUN_DELAY: number = 0.15;
 
 	/**符號列表數量 */
 	public static COUNT_OF_LIST: number = 3;
+
+	/**中獎畫面縮放時間 */
+	private static BIG_WIN_DURATION: number = 1;
 
 	public constructor() {
 		super();
@@ -51,6 +57,7 @@ class GameScene extends eui.Component implements eui.UIComponent {
 		this.spinButton.addEventListener(egret.TouchEvent.TOUCH_TAP, this.spin, this);
 		this.symbolList[2].addEventListener(ViewEvent[ViewEvent.FINISH_RUN_EVENT], this.onFinishRun, this);
 		this.cheatInput.prompt = `操控轉輪:請輸入3組數字並以逗號","隔開，輸入完成後請按下Enter發送指令  增加點數:請輸入 $數字，ex:$100`;
+		this.bigWin.visible = false;
 		this.closeCheat();
 	}
 
@@ -61,13 +68,14 @@ class GameScene extends eui.Component implements eui.UIComponent {
 		}
 
 		this.isRun = false;
+		this.bigWin.visible = false;
 		this.closeCheat();
 	}
 
 	/**下注 */
 	private spin(): void {
 		if (!this.isRun) {
-			this.dispatchEvent(new egret.Event(ViewEvent[ViewEvent.SPIN_EVENT]))
+			this.dispatchEvent(new egret.Event(ViewEvent[ViewEvent.SPIN_EVENT]));
 		}
 	}
 
@@ -76,6 +84,7 @@ class GameScene extends eui.Component implements eui.UIComponent {
 		this.isRun = true;
 		this.bonus.text = "0";
 		this.bonus.textColor = 0xFFFFFF;
+		this.bigWin.visible = false;
 
 		for (let i: number = 0; i < GameScene.COUNT_OF_LIST; i++) {
 			this.symbolList[i].run(result[i], i * GameScene.RUN_DELAY);
@@ -85,7 +94,7 @@ class GameScene extends eui.Component implements eui.UIComponent {
 	/**完成轉動 */
 	private onFinishRun(): void {
 		this.isRun = false;
-		this.dispatchEvent(new egret.Event(ViewEvent[ViewEvent.FINISH_RUN_EVENT]))
+		this.dispatchEvent(new egret.Event(ViewEvent[ViewEvent.FINISH_RUN_EVENT]));
 	}
 
 	/**作弊開關 */
@@ -184,8 +193,30 @@ class GameScene extends eui.Component implements eui.UIComponent {
 	}
 
 	/**顯示下注結果 */
-	public showResult(bonus: number): void {
+	public showResult(isWin: boolean, bonus: number): void {
 		this.bonus.text = bonus.toLocaleString();
-		this.bonus.textColor = bonus > 0 ? 0x2A8CDD : 0xFF4C4C;
+		this.bonus.textColor = 0xFF4C4C;
+
+		if (isWin) {
+			this.bonus.textColor = 0x2A8CDD;
+			this.showWin();
+		}
+	}
+
+	/**顯示中獎畫面 */
+	private showWin(): void {
+		TweenLite.fromTo(this.bigWin, GameScene.BIG_WIN_DURATION, { x: 441, y: 214, scaleX: 0.1, scaleY: 0.1 }, {
+			x: 286, y: 108, scaleX: 0.5, scaleY: 0.5, ease: Elastic.easeOut,
+			onStart: () => {
+				// 開始補間動畫後再顯示出來，不然會發生補間動畫來不及跑的詭異情況
+				this.bigWin.visible = true;
+			}
+		})
+	}
+
+	/**關閉中獎畫面 */
+	private closeWin(): void {
+		TweenLite.killTweensOf(this.bigWin);
+		this.bigWin.visible = false;
 	}
 }
